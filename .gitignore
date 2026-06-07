@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+.venv/
+ENV/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# ==================================================
+# SANGAT PENTING: JANGAN UPLOAD DATASET KE GITHUB!
+# KTP, KK, dan Ijazah mengandung Data Pribadi (Privacy)
+# ==================================================
+file/
+*.xlsx
+*.csv
+*.jpg
+*.jpeg
+*.png
+*.webp

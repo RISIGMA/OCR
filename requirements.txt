@@ -1,0 +1,8 @@
+streamlit
+opencv-python
+pytesseract
+pandas
+openpyxl
+numpy
+jiwer
+scikit-image
