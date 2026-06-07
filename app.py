@@ -55,20 +55,30 @@ st.markdown("""
 st.markdown('<p class="main-title">Digital Image OCR System</p>', unsafe_allow_html=True)
 st.markdown('<p class="sub-title">Restorasi & Ekstraksi Teks Dokumen Buram dengan Algoritma Adaptive</p>', unsafe_allow_html=True)
 
-# Area Upload File
-uploaded_file = st.file_uploader("📂 Pilih foto ijazah, KTP, atau arsip lama", type=["jpg", "jpeg", "png"], label_visibility="collapsed")
+# Area Input Gambar
+st.markdown("### 📥 Input Dokumen")
+tab1, tab2 = st.tabs(["📂 Upload dari Galeri", "📸 Ambil dari Kamera"])
 
-if uploaded_file is None:
+with tab1:
+    uploaded_file = st.file_uploader("Pilih foto ijazah, KTP, atau arsip lama", type=["jpg", "jpeg", "png"], label_visibility="collapsed")
+
+with tab2:
+    camera_file = st.camera_input("Jepret Langsung")
+
+# Penentu file mana yang diproses (Kamera diprioritaskan jika dua-duanya diisi)
+file_yang_diproses = camera_file if camera_file is not None else uploaded_file
+
+if file_yang_diproses is None:
     # Sidebar kosong saat belum ada foto
     with st.sidebar:
         st.markdown("## 🎛️ Panel Kendali")
         st.caption("Sistem Peningkatan Kualitas Citra")
         st.divider()
-        st.info("👈 Silakan upload dokumen di halaman utama terlebih dahulu. Sistem akan mengkalkulasi resolusi foto dan mengatur parameter secara otomatis.")
+        st.info("👈 Silakan upload atau jepret dokumen di halaman utama terlebih dahulu. Sistem akan mengkalkulasi resolusi foto dan mengatur parameter secara otomatis.")
         st.markdown("<br><br><br><br><br><p style='text-align: center; color: #666; font-size: 0.8rem;'>Skripsi OCR v2.0</p>", unsafe_allow_html=True)
 else:
-    # Membaca file yang diupload
-    file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
+    # Membaca file yang diupload atau dijepret
+    file_bytes = np.asarray(bytearray(file_yang_diproses.read()), dtype=np.uint8)
     img_asli = cv2.imdecode(file_bytes, 1)
 
     if img_asli is None:
