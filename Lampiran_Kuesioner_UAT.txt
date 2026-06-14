@@ -1,0 +1,47 @@
+# Lampiran: Lembar Kuesioner Kelayakan Sistem (User Acceptance Test)
+
+**Judul Penelitian:** [Isi dengan Judul Skripsi Anda]
+**Peneliti:** [Nama Anda]
+
+## A. Profil Responden
+*Harap mengisi data diri Anda pada baris di bawah ini:*
+- **Nama (Inisial)** : ..........................................
+- **Pekerjaan/Status**: ..........................................
+- **Usia**            : ..........................................
+
+## B. Petunjuk Pengisian
+1. Sebelum mengisi kuesioner ini, mohon kesediaannya untuk mencoba mengoperasikan aplikasi "Digital Image OCR System" terlebih dahulu.
+2. Cobalah mengunggah (*upload*) gambar dokumen/ijazah yang buram, bereksperimen dengan tuas geser di panel kendali, dan lihat hasil ekstraksi teksnya.
+3. Berikan tanda silang (X) atau centang (✓) pada kolom angka yang paling sesuai dengan pengalaman dan pendapat Anda.
+
+**Keterangan Skala Penilaian (Skala Likert):**
+- **1** = Sangat Tidak Setuju (STS)
+- **2** = Tidak Setuju (TS)
+- **3** = Netral (N)
+- **4** = Setuju (S)
+- **5** = Sangat Setuju (SS)
+
+## C. Daftar Pertanyaan
+
+*(Catatan: Silakan buat tabel secara manual di Word dengan kolom: No, Indikator Pertanyaan, 1, 2, 3, 4, 5 lalu masukkan pertanyaan di bawah ini ke dalamnya)*
+
+**Aspek Antarmuka Pengguna (User Interface)**
+1. Tampilan desain antarmuka aplikasi web ini rapi, modern, dan tidak membingungkan.
+2. Tata letak tombol (seperti menu *Upload*, *Kamera*, dan teks hasil) mudah ditemukan.
+
+**Aspek Kemudahan Penggunaan (Usability)**
+3. Saya dapat memahami dan menggunakan aplikasi ini dengan mudah tanpa memerlukan buku panduan.
+4. Panel kendali (seperti pengaturan tuas *Block Size*, *C*, dan *Ketebalan*) mudah dioperasikan.
+5. Aplikasi merespon perintah dengan cepat dan tidak mengalami *error* saat memproses gambar.
+
+**Aspek Fungsionalitas dan Manfaat**
+6. Aplikasi ini secara visual berhasil memperjelas teks pada foto dokumen yang awalnya buram atau gelap.
+7. Teks hasil ekstrak (*output OCR*) yang dikeluarkan oleh sistem sudah terbaca dan sesuai dengan harapan.
+8. Secara keseluruhan, aplikasi ini sangat layak dan bermanfaat untuk digunakan di dunia nyata.
+
+## D. Kritik dan Saran
+*Silakan tuliskan kesan, pesan, kritik, atau saran Anda terhadap aplikasi ini (opsional):*
+
+......................................................................................................................................................
+
+......................................................................................................................................................
