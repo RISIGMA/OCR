@@ -2,9 +2,11 @@ import streamlit as st
 import cv2
 import numpy as np
 import pytesseract
+import platform
 
-# 1. Konfigurasi Lokasi Tesseract
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+# 1. Konfigurasi Lokasi Tesseract (Hanya untuk Windows)
+if platform.system() == 'Windows':
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # 2. Pengaturan Halaman Web
 st.set_page_config(

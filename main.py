@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import re
 import os
+import platform
 from jiwer import cer, wer
 from skimage.metrics import mean_squared_error as mse
 from skimage.metrics import peak_signal_noise_ratio as psnr
@@ -12,7 +13,8 @@ from skimage.metrics import structural_similarity as ssim
 # ==========================================
 # KONFIGURASI TESSERACT
 # ==========================================
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+if platform.system() == 'Windows':
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 def proses_dan_evaluasi(path_gambar, teks_kunci_jawaban):
     print(f"Memproses: {path_gambar}...")
